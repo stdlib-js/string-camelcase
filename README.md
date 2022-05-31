@@ -26,30 +26,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/string-camelcase
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var camelcase = require( '@stdlib/string-camelcase' );
+camelcase = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@umd/browser.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.camelcase;
+})();
+</script>
 ```
 
 #### camelcase( str )
@@ -80,8 +82,13 @@ out = camelcase( '--foo-bar--' );
 
 ## Examples
 
-```javascript
-var camelcase = require( '@stdlib/string-camelcase' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var str = 'Hello World!';
 var out = camelcase( str );
@@ -94,103 +101,18 @@ out = camelcase( str );
 str = 'To be, or not to be: that is the question.';
 out = camelcase( str );
 // returns 'toBeOrNotToBeThatIsTheQuestion'
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use the module as a general utility, install the module globally
-
-```bash
-npm install -g @stdlib/string-camelcase
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: camelcase [options] [<string>]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-### Notes
-
--   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
-
-    ```bash
-    # Not escaped...
-    $ echo -n $'beep\nfoo_bar' | camelcase --split /\r?\n/
-
-    # Escaped...
-    $ echo -n $'beep\nfoo_bar' | camelcase --split /\\r?\\n/
-    ```
-
--   The implementation ignores trailing delimiters.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ camelcase 'hello world!'
-helloWorld
-```
-
-To use as a [standard stream][standard-streams],
-
-```bash
-$ echo -n 'beEp booP' | camelcase
-beEpBooP
-```
-
-By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
-
-```bash
-$ echo -n 'beep\nfoo_bar' | camelcase --split '\t'
-beep
-fooBar
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -283,11 +205,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/string/constantcase]: https://github.com/stdlib-js/string-constantcase
+[@stdlib/string/constantcase]: https://github.com/stdlib-js/string-constantcase/tree/umd
 
-[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string-kebabcase
+[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string-kebabcase/tree/umd
 
-[@stdlib/string/snakecase]: https://github.com/stdlib-js/string-snakecase
+[@stdlib/string/snakecase]: https://github.com/stdlib-js/string-snakecase/tree/umd
 
 <!-- </related-links> -->
 
