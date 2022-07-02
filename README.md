@@ -55,7 +55,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.camelcase;
+})();
 })();
 </script>
 ```
@@ -95,6 +97,7 @@ out = camelcase( '--foo-bar--' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var str = 'Hello World!';
 var out = camelcase( str );
@@ -108,6 +111,7 @@ str = 'To be, or not to be: that is the question.';
 out = camelcase( str );
 // returns 'toBeOrNotToBeThatIsTheQuestion'
 
+})();
 })();
 </script>
 </body>
@@ -211,11 +215,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/string/constantcase]: https://github.com/stdlib-js/string-constantcase/tree/umd
+[@stdlib/string/constantcase]: https://github.com/stdlib-js/string-constantcase/tree/umd/tree/umd
 
-[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string-kebabcase/tree/umd
+[@stdlib/string/kebabcase]: https://github.com/stdlib-js/string-kebabcase/tree/umd/tree/umd
 
-[@stdlib/string/snakecase]: https://github.com/stdlib-js/string-snakecase/tree/umd
+[@stdlib/string/snakecase]: https://github.com/stdlib-js/string-snakecase/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
