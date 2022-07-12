@@ -33,7 +33,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import camelcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@v0.0.4-esm/index.mjs';
+import camelcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@esm/index.mjs';
 ```
 
 #### camelcase( str )
@@ -70,7 +70,7 @@ out = camelcase( '--foo-bar--' );
 <body>
 <script type="module">
 
-import camelcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@v0.0.4-esm/index.mjs';
+import camelcase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-camelcase@esm/index.mjs';
 
 var str = 'Hello World!';
 var out = camelcase( str );
