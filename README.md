@@ -214,6 +214,7 @@ fooBar
 
 -   <span class="package-name">[`@stdlib/string-constantcase`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">convert a string to constant case.</span>
 -   <span class="package-name">[`@stdlib/string-kebabcase`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
+-   <span class="package-name">[`@stdlib/string-pascalcase`][@stdlib/string/pascalcase]</span><span class="delimiter">: </span><span class="description">convert a string to Pascal case.</span>
 -   <span class="package-name">[`@stdlib/string-snakecase`][@stdlib/string/snakecase]</span><span class="delimiter">: </span><span class="description">convert a string to snake case.</span>
 
 </section>
@@ -302,6 +303,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/string/constantcase]: https://github.com/stdlib-js/string-constantcase
 
 [@stdlib/string/kebabcase]: https://github.com/stdlib-js/string-kebabcase
+
+[@stdlib/string/pascalcase]: https://github.com/stdlib-js/string-pascalcase
 
 [@stdlib/string/snakecase]: https://github.com/stdlib-js/string-snakecase
 
